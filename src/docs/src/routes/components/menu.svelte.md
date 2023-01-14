@@ -160,20 +160,20 @@ data="{[
 <Component title="Item with border">
 <ul class="menu bg-base-100 w-56 shadow-xl rounded-box">
   <li><a>Item 1</a></li>
-  <li class="bordered"><a>I have border</a></li>
+  <li class="bordered"><a>I have a border</a></li>
   <li><a>Item 3</a></li>
 </ul>
 <pre slot="html" use:replace={{ to: $prefix }}>{
 `<ul class="$$menu bg-base-100 w-56 rounded-box">
   <li><a>Item 1</a></li>
-  <li class="$$bordered"><a>I have border</a></li>
+  <li class="$$bordered"><a>I have a border</a></li>
   <li><a>Item 3</a></li>
 </ul>`
 }</pre>
 <pre slot="react" use:replace={{ to: $prefix }}>{
 `<ul className="$$menu bg-base-100 w-56 rounded-box">
   <li><a>Item 1</a></li>
-  <li className="$$bordered"><a>I have border</a></li>
+  <li className="$$bordered"><a>I have a border</a></li>
   <li><a>Item 3</a></li>
 </ul>`
 }</pre>
@@ -494,7 +494,7 @@ data="{[
 }</pre>
 </Component>
 
-<Component title="Icons with padding">
+<Component title="Only icons with padding">
 <ul class="menu bg-base-100 shadow-xl p-2 rounded-box">
   <li>
     <a>
